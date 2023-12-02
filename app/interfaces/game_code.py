@@ -1,9 +1,9 @@
-from pydantic import BaseModel
+from .main import AliasedBaseModel
 
 
-class NewGameCodeGETRequest(BaseModel):
+class NewGameCodeGETRequest(AliasedBaseModel):
     pass
 
 
-class NewGameCodeGETResponse(BaseModel):
+class NewGameCodeGETResponse(AliasedBaseModel):
     game_code: str
